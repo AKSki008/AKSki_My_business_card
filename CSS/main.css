@@ -62,7 +62,7 @@ nav{
 
 /* --------------------MAIN-------------------- */
 main{
-    height: 2400px;
+    height: 3345px;
     width: 100%;
     margin: 0;
     position: absolute;
@@ -100,79 +100,138 @@ source{
 #logo{
     transform: translateX(0px) translateY(-100px);
     background-color: unset;
-    color: white;
+
+    color: #00b5e2;
     width: 90%;
 
 }
 #logo > h1{
     font-family: 'Corinthia', cursive;
     font-size: 150px; 
-    
+    text-shadow: 5px 5px 5px white;
 }
 #logo > h2{
 
     font-size: 40px; 
-    color: #00b5e2;
+    color: white;
     transform: translateX(-400px) translateY(50px);
 }
 #about{
-    background-color: unset;
-    /* clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%); */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
     transform: translateY(-150px);
-    height: auto;
+    height: 740px;
+
 }
 #about > .about{
 
-    background-color: #97ffefe1;
+    background-color: black;
     width: 40%;
     height: 400px;
-    margin: 5px;
-    margin-bottom: 50px;
-    margin-top: -50px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
+    margin-top: 250px !important;
     align-items: center;
-    box-shadow: 0px 0px 10px #97ffef;
+
 }
 #about > #foto{
     box-shadow: unset;
     background-color: unset;
 }
 #about > #foto > img{
-    height: 400px;
+    height: 300px;
     width: auto;
     border-radius: 300px;
-    box-shadow: 0px 0px 20px #97ffef;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
 }
 #skills{
 height: auto;
-box-shadow: 0px 0px 10px #97ffef;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
 
 }
 #skills > .skills{
     background-color: black;
     height: 400px;
     width: 30%;
-    margin: 50px 5px;
-    color: #00b5e2;
-    display: flex;
-    justify-content:center;
     align-items: center;
+}
+#github_img {
+    background-color: unset;
+    display: flex;
+    justify-content: space-around;
+}
+#github_img > #note{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: black;
+    height: 250px;
+    font-size: 30px;
+    width: 20%;
+    padding: 30px;
+    background-color: #97ffef;
     border-radius: 3px;
-    padding: 20px;
-    font-family: 'Corinthia', cursive;
-    font-size: 100px;
+    box-shadow: 0px 0px 10px #97ffef;
+
+}
+#github_img > img{
+    box-shadow: 3px 3px 10px #97ffef;
+    border-radius: 3px;
+    height: 450px;
+    
 }
 #projects{
     height: auto;
     box-shadow: 0px 0px 10px #97ffef;
-
+    margin-bottom: 50px;
 }
 #projects > .projects{
     background-color: black;
     height: 500px;
     width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projects > .projects > .boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+#projects > .projects > .boxes > .pages,
+#projects > .projects > .boxes > .apps{
+    /* background-color: #97ffef; */
+    height: 300px;
+    width: 30%;
+    margin: 15px;
+    border: solid 1px #97ffef;
+    box-shadow: 3px 3px 10px #97ffef;
+}
+#contact{
+    background-color: unset;
+    height: 600px;
+}
+#contact > .contact{
+    /* background-color:#97ffefd8; */
+    height: 600px;
+    width: 46%;
+
+}
+#about,
+#skills,
+#github_img,
+#projects,
+#contact{
+    transform: translateY(-160px);
+
+}
+.about,
+.skills,
+.projects,
+.contact{
+   
     margin: 50px 5px;
     color: #00b5e2;
     display: flex;
@@ -182,16 +241,7 @@ box-shadow: 0px 0px 10px #97ffef;
     padding: 20px;
     font-family: 'Corinthia', cursive;
     font-size: 100px;
-}
-#contact{
-    background-color: unset;
-}
-#about,
-#skills,
-#projects,
-#contact{
-    transform: translateY(-160px);
-
+    text-shadow: 2px 2px 3px white;
 }
 #footer{
     box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.308);

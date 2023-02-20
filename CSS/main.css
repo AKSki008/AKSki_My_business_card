@@ -121,7 +121,7 @@ source{
     transform: translateY(-150px);
     height: auto;
 }
-.about{
+#about > .about{
 
     background-color: #97ffefe1;
     width: 40%;
@@ -129,35 +129,59 @@ source{
     margin: 5px;
     margin-bottom: 50px;
     margin-top: -50px;
-    border-radius: 5px;
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px #97ffef;
 }
 #about > #foto{
+    box-shadow: unset;
     background-color: unset;
+}
+#about > #foto > img{
+    height: 400px;
+    width: auto;
+    border-radius: 300px;
+    box-shadow: 0px 0px 20px #97ffef;
 }
 #skills{
 height: auto;
-margin-bottom: 50px;
+box-shadow: 0px 0px 10px #97ffef;
+
 }
-.skills{
+#skills > .skills{
     background-color: black;
     height: 400px;
-    width: 20%;
-    margin: 50px 25px;
+    width: 30%;
+    margin: 50px 5px;
     color: #00b5e2;
     display: flex;
     justify-content:center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 20px;
     font-family: 'Corinthia', cursive;
     font-size: 100px;
 }
 #projects{
- 
+    height: auto;
+    box-shadow: 0px 0px 10px #97ffef;
 
+}
+#projects > .projects{
+    background-color: black;
+    height: 500px;
+    width: 46%;
+    margin: 50px 5px;
+    color: #00b5e2;
+    display: flex;
+    justify-content:center;
+
+    border-radius: 3px;
+    padding: 20px;
+    font-family: 'Corinthia', cursive;
+    font-size: 100px;
 }
 #contact{
     background-color: unset;
@@ -170,6 +194,7 @@ margin-bottom: 50px;
 
 }
 #footer{
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.308);
     position: fixed;
     bottom: 0;
     background-color: #97ffef;

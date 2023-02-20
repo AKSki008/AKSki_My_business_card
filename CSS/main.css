@@ -18,7 +18,7 @@ nav{
     background-color: #97ffef;
     height: 40px;
     margin: 0;
-    position: static;
+    position: fixed;
     top: 0px;
     width: 100%;
 }
@@ -89,7 +89,7 @@ padding: 0;
 position:static;
 max-width: 100%;
 overflow: hidden;
-top: 0px;
+top: 40px;
 }
 
 source{
@@ -115,7 +115,7 @@ source{
 }
 #about{
     background-color: unset;
-    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
+    /* clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%); */
     transform: translateY(-150px);
     height: auto;
 }
@@ -125,7 +125,8 @@ source{
     width: 40%;
     height: 400px;
     margin: 5px;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-top: -50px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -135,8 +136,22 @@ source{
     background-color: unset;
 }
 #skills{
-    
+height: auto;
 
+}
+.skills{
+    background-color: black;
+    height: 400px;
+    width: 20%;
+    margin: 50px 25px;
+    color: #00b5e2;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Corinthia', cursive;
+    font-size: 100px;
 }
 #projects{
  

@@ -60,11 +60,13 @@ nav{
 
 /* --------------------MAIN-------------------- */
 main{
+    height: 2400px;
     width: 100%;
     margin: 0;
     position: absolute;
     top: 40px;
     float: right;
+    overflow: hidden;
 }
 
 .container{
@@ -112,8 +114,25 @@ source{
     transform: translateX(-400px) translateY(50px);
 }
 #about{
+    background-color: unset;
     clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
     transform: translateY(-150px);
+    height: auto;
+}
+.about{
+
+    background-color: #97ffefe1;
+    width: 40%;
+    height: 400px;
+    margin: 5px;
+    margin-top: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about > #foto{
+    background-color: unset;
 }
 #skills{
     
@@ -122,6 +141,9 @@ source{
 #projects{
  
 
+}
+#contact{
+    background-color: unset;
 }
 #about,
 #skills,
@@ -132,9 +154,9 @@ source{
 }
 #footer{
 
-    transform: translateY(1305px);
-    background-color: #00b5e2;
+    transform: translateY(1296px);
+    background-color: #97ffef;
     width: 100%;
-    height: 120px;
+    height: 60px;
 
 }

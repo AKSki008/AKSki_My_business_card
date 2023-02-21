@@ -273,10 +273,33 @@ height: auto;
     /* background-color: #97ffef; */
     height: 300px;
     width: 30%;
-    margin: 15px;
+    margin: 15px ;
     border: solid 1px #97ffef;
     box-shadow: 3px 3px 10px #97ffef;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+  align-content: center;
+
 }
+#projects > .projects > .boxes > .pages > a> img,
+#projects > .projects > .boxes > .apps > a> img{
+    height: 100%;
+    width: 100%;
+
+}
+#projects > .projects > .boxes > .pages >  h4 ,
+#projects > .projects > .boxes > .apps >  h4 {
+font-size: 20px;
+line-height: 15px;
+height: 30px;
+margin: 20px;
+font-family: 'Courier New', Courier, monospace;
+color: white;
+}
+
 #contact{
     background-color: unset;
     height: 600px;

@@ -251,25 +251,27 @@ height: auto;
     margin-bottom: 50px;
 }
 #projects > .projects{
-    background-color: black;
+
     height: 500px;
     width: 46%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+
 }
-#projects > .projects > .boxes{
+.boxes{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: auto;
     width: 100%;
+    background-color: black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
 }
-#projects > .projects > .boxes > .pages,
-#projects > .projects > .boxes > .apps{
+.boxes > .pages,
+.boxes > .apps{
     /* background-color: #97ffef; */
     height: 300px;
     width: 30%;
@@ -284,14 +286,14 @@ align-items: center;
   align-content: center;
 
 }
-#projects > .projects > .boxes > .pages > a> img,
-#projects > .projects > .boxes > .apps > a> img{
+.boxes > .pages > a> img,
+.boxes > .apps > a> img{
     height: 100%;
     width: 100%;
 
 }
-#projects > .projects > .boxes > .pages >  h4 ,
-#projects > .projects > .boxes > .apps >  h4 {
+.boxes > .pages >  h4 ,
+.boxes > .apps >  h4 {
 font-size: 20px;
 line-height: 15px;
 height: 30px;

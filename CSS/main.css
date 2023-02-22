@@ -86,7 +86,7 @@ main{
     transform: translateY(150px);
 
 }
-
+/* ------------------------BACKGROUND_VIDEO---------------------------- */
 #bg{
 margin: 0;
 padding: 0;
@@ -99,6 +99,7 @@ top: 0px;
 source{
     z-index: 0;
 }
+/* ------------------------LOGO---------------------------- */
 #logo{
     transform: translateX(0px) translateY(0px);
     background-color: unset;
@@ -118,6 +119,7 @@ source{
     color: white;
     transform: translateX(-400px) translateY(50px);
 }
+/* ------------------------ABOUT---------------------------- */
 #about{
     /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308); */
     clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
@@ -137,7 +139,7 @@ source{
     letter-spacing: 2px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
     padding: 20px;
-
+    border-radius: 5px;
 }
 #about > #foto{
     box-shadow: unset;
@@ -149,6 +151,7 @@ source{
     border-radius: 50px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
 }
+/* ------------------------SKILLS---------------------------- */
 #skills{
 height: auto;
 
@@ -159,7 +162,7 @@ height: auto;
     width: 30%;
     align-items: center;
 }
-/* ============================= */
+/* =============CARD_ROTATE================ */
 .box {
 
     width:100%;
@@ -180,6 +183,7 @@ height: auto;
     -webkit-transform-style:preserve-3d;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
 
   }
 
@@ -198,6 +202,7 @@ height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
   }
 
   .back {
@@ -216,7 +221,7 @@ height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    border-radius: 5px;
   }
 
   .projects > .box:hover > .card {
@@ -224,10 +229,25 @@ height: auto;
     -webkit-transform:unset;
     transform:rotateX(180deg);
     -webkit-transform:rotateX(180deg);
-  }
 
+  }
+  /* inna rotacja??
+
+  .projects > .box:hover > .card  {
+    margin-top: 0px;
+    -webkit-transition: margin 1s ease;
+       -moz-transition: margin 1s ease;
+         -o-transition: margin 1s ease;
+        -ms-transition: margin 1s ease;
+            transition: margin 1s ease;
+  }
+   
+  .projects > .box:hover > .card :hover {
+    margin-top: -200px;
+  } */
 
 /* =============================== */
+/* ------------------------NOTE_GITHUB---------------------------- */
 #github_img {
     background-color: unset;
     display: flex;
@@ -243,17 +263,18 @@ height: auto;
     width: 20%;
     padding: 30px;
     background-color: #97ffefda;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 3px 3px 10px #97ffef;
 
 
 }
 #github_img > img{
     box-shadow: 3px 3px 10px #97ffef;
-    border-radius: 3px;
+    border-radius: 5px;
     height: 450px;
     
 }
+/* ------------------------PROJECTS---------------------------- */
 #projects{
     height: auto;
     box-shadow: 0px 0px 10px #97ffef;
@@ -267,6 +288,7 @@ height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
 }
 .boxes{
@@ -282,6 +304,7 @@ height: auto;
     -webkit-transform:rotateX(180deg);
     transform:rotateZ(180deg);
     -webkit-transform:rotateZ(180deg);
+
 }
 .boxes > .pages,
 .boxes > .apps{
@@ -290,7 +313,7 @@ height: auto;
     height: 300px;
     width: 30%;
     margin: 15px ;
-    border: solid 1px #97ffef;
+
     box-shadow: 2px 2px 5px #97ffef;
     overflow: hidden;
     display: flex;
@@ -316,16 +339,6 @@ font-family: 'Courier New', Courier, monospace;
 color: white;
 }
 
-#contact{
-    background-color: unset;
-    height: 600px;
-}
-#contact > .contact{
-    /* background-color:#97ffefd8; */
-    height: 600px;
-    width: 46%;
-
-}
 #about,
 #skills,
 #github_img,
@@ -344,12 +357,83 @@ color: white;
     display: flex;
     justify-content:center;
 
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 20px;
     font-family: 'Corinthia', cursive;
     font-size: 100px;
-    /* text-shadow: 2px 2px 3px white; */
+
 }
+/* ------------------------CONTACT---------------------------- */
+#contact{
+    background-color: unset;
+    height: 600px;
+}
+#contact > .contact{
+    /* background-color:#1a423cd8; */
+    height: 600px;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact > .contact > .content {
+    height: 500px;
+    width: 80%;
+    background-color: #97ffef;
+    box-shadow: 3px 3px 10px #97ffef;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+
+}
+.media {
+    
+    width: 100%;
+    margin-top: -50px;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.9);
+
+  }
+  .media > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50px) translateY(95px);
+
+  }
+  
+  .media > ul > li > a > i {
+    height: 50px;
+    width: 50px;
+
+    color: #00b5e2;
+    font-size: 40px;
+    margin: 0 45px;
+    transition: 0.5s;
+
+  }
+  
+  .media > ul > li > a > i:hover {
+    color:white;
+
+  }
+/* ------------------------FORM---------------------------- */
+
+ 
+
+/* ------------------------FOOTER---------------------------- */
 #footer{
     box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.308);
     position: fixed;

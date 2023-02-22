@@ -165,8 +165,8 @@ height: auto;
     width:100%;
     height:400px;
     margin:0 auto;
-    perspective:1500px;
-    -webkit-perspective:1500px;
+    perspective:2000px;
+    -webkit-perspective:2000px;
   }
 
   .card {
@@ -218,6 +218,15 @@ height: auto;
     justify-content: center;
 
   }
+
+  .projects > .box:hover > .card {
+    transform:unset;
+    -webkit-transform:unset;
+    transform:rotateX(180deg);
+    -webkit-transform:rotateX(180deg);
+  }
+
+
 /* =============================== */
 #github_img {
     background-color: unset;
@@ -252,7 +261,7 @@ height: auto;
 }
 #projects > .projects{
 
-    height: 500px;
+    height: 350px;
     width: 46%;
     display: flex;
     flex-direction: column;
@@ -269,15 +278,20 @@ height: auto;
     width: 100%;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+    transform:rotateX(180deg);
+    -webkit-transform:rotateX(180deg);
+    transform:rotateZ(180deg);
+    -webkit-transform:rotateZ(180deg);
 }
 .boxes > .pages,
 .boxes > .apps{
-    /* background-color: #97ffef; */
+    cursor: pointer;
+
     height: 300px;
     width: 30%;
     margin: 15px ;
     border: solid 1px #97ffef;
-    box-shadow: 3px 3px 10px #97ffef;
+    box-shadow: 2px 2px 5px #97ffef;
     overflow: hidden;
     display: flex;
     flex-direction: column;

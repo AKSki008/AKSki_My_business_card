@@ -134,10 +134,10 @@ justify-content: space-around;
 
 }
  #p{
-    transform: translateY(-90px);
+    transform: translateY(-95px);
 }
 #pr{
-    transform: translateY(-165px);
+    transform: translateY(-160px);
 }
 #r{
     transform: translateY(-205px);

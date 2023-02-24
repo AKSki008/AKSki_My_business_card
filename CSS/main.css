@@ -277,7 +277,7 @@ height: auto;
     align-items: center;
     text-align: center;
     color: black;
-    height: 100px;
+    height: auto;
     font-size: 30px;
     width: 20%;
     padding: 30px;
@@ -385,7 +385,8 @@ color: white;
 /* ------------------------CONTACT---------------------------- */
 #contact{
     background-color: unset;
-    height: 600px;
+
+    margin-top: 50px;
 }
 #contact > .contact{
     /* background-color:#1a423cd8; */
@@ -395,10 +396,11 @@ color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+margin-top: 140px;
 }
 #contact > .contact > .content {
     height: auto;
+    min-height: 400px;
     width: 80%;
     background-color: #97ffef;
     box-shadow: 3px 3px 10px #97ffef;
@@ -491,24 +493,23 @@ font-size: 14px;
 
   .form {
     margin:3rem auto;
-
-    max-width:40rem;
+    max-width:37rem;
 
 }
 .form .form-row {
-    margin-bottom:1rem;
-    
+    margin-bottom:0.5rem;
+    font-size: 22px;
+
 }
 .form .form-row:last-child {
     margin-bottom: 0;
-    
 }
 .form input[type=text],
 .form input[type=email],
 .form textarea{
     box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
-    background-color: rgba(42, 40, 78, 0.5);
-
+    background-color: #97ffef;
+    font-size: 18px;
 }
 .form .checkbox-cnt .state {
     box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
@@ -518,20 +519,20 @@ font-size: 14px;
 .form input[type=email],
 .form textarea {
     border-radius:0.2rem;
-
+    box-shadow: 0 0 10px #00b5e2;
     padding:0.8rem;
-    border:1px solid #000000;
+    border:1px solid #00b5e2;
     display: block;
     width:100%;
-    color:#009bfc;
+    color:black;
 }
 .form input[type=text]:focus,
 .form input[type=email]:focus,
 .form textarea:focus {
-    border-color:#000000;
-    box-shadow:inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0,0,0,0.07);
+    border-color:#00b5e2;
+    box-shadow:inset 0 0 0  1px #00b5e2;
     outline:none;
-    background-color: #9defffe8;
+    background-color: #7ee5ff;
     color:black;
 }
 .form textarea {
@@ -546,11 +547,11 @@ font-size: 14px;
 .form .submit-btn {
 
     padding:1rem 2rem;
-    background: #ffb66f;
+    background: #00b5e2;
     border:0;
     border-radius:0.2rem;
     color:black;
-font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     transition: 0.3s background-color;
     cursor: pointer;
@@ -563,15 +564,15 @@ font-size: 20px;
     }
 }
 .form .submit-btn:hover {
-    background: #9deeff;
+    background: #4edcff;
 }
 .form .checkbox-cnt {
     padding-left:3rem;
     position: relative;
     font-weight: normal;
-
+    font-size: 15px;
     line-height: 1.1rem;
-    color:#009bfc50;
+    color:black;
     cursor: pointer;
 }
 .form .checkbox-cnt .state {
@@ -581,14 +582,15 @@ font-size: 20px;
     position: absolute;
     left:0;
     top:0;
-    border:1px solid #aaa;
+    border:1px solid #00b5e2;
     border-radius:0.2rem;
+    box-shadow: 0 0 10px #00b5e2;
 }
 .form .checkbox-cnt .state:before {
     width:1rem;
     height: 1rem;
     border-radius:0.2rem;
-    background: #9deeff;
+    background: #00b5e2;
     display: block;
     position: absolute;
     left:50%;

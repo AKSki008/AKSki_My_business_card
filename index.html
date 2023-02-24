@@ -50,7 +50,7 @@
             <div class="about" id="foto"> <img src="GALLERY/foto.jpg" alt=""> </div>
             <div class="about">
                 About<br>
-                <h4 style="font-size: 20px; font-family: 'Courier New', Courier, monospace; color: white; text-shadow: unset;">
+                <h4 style="font-size: 20px;     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white; text-shadow: unset;">
                     Moje zainteresowanie IT jest ze mna już lata.. <br> zaczeło się w szkole przez jedno zadanie na algorytmach.. <br>
                     to pociągło mnie dalej do szkoły średniej o kierunku informatycznym i gdzieś po latach do odnalezienia ściężki w kierunku w którym zawsze chciałam iść. <br><br>
                     Początkowo praca jako Administrator Sieci dawała satysfakcję, 
@@ -141,9 +141,34 @@
 
                 </div>
             </div>
-            <div class="contact">Form
+            <div class="contact">
                 <div class="content">
-                    
+                    <form class="form" id="contactForm" method="post" novalidate action="/send-script.php">
+                        <div class="form-row">
+                            <label for="field-name">Imię, Nazwisko*</label>
+                            <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                        </div>
+                        <div class="form-row">
+                            <label for="field-email">Email*</label>
+                            <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                        </div>
+                        <div class="form-row">
+                            <label for="field-message">Wiadomość*</label>
+                            <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <label class="checkbox-cnt">
+                                <input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
+                                <i class="state" aria-hidden="true"></i>
+                                <span>Wyrażam zgodę na przetważanie danych osobowych zgodnie z RODO (art. 13 RODO) w celu otrzemania odpowiedzi, informacji zwrotnej.</span>
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="submit-btn">
+                                Wyślij
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

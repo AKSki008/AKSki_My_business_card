@@ -411,8 +411,8 @@ margin-top: 140px;
 .media {
     
     width: 100%;
-    margin-top: -50px;
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.9);
+margin-top: 50px;
+    text-shadow: 5px 5px 3px #00b5e269;
 
   }
   .media > ul {
@@ -420,28 +420,27 @@ margin-top: 140px;
     flex-direction: row;
     list-style: none;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
 align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(95px);
+transform: translateX(-20px);
+
 
   }
   
   .media > ul > li > a > i {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 
     color: #00b5e2;
-    font-size: 40px;
-    margin: 0 45px;
+    font-size: 55px;
+
     transition: 0.5s;
 
   }
   
   .media > ul > li > a > i:hover {
-    color:white;
-
+    color:#60dfff;
+    text-shadow: 5px 5px 3px #01354269;
   }
 
 

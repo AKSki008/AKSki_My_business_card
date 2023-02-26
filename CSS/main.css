@@ -265,6 +265,7 @@ height: auto;
     display: flex;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     color: black;
     height: auto;
     font-size: 30px;
@@ -273,9 +274,20 @@ height: auto;
     background-color: #97ffefda;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #97ffef;
-
-
 }
+#github_img > #note > .licznik{
+    color: black;
+margin-left: -40px;
+    font-weight: 700;
+    font-size: 35px;
+    text-shadow: 0 0 5px #00b5e2;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 100%;
+list-style: none;
+}
+
 #github_img > img{
     box-shadow: 3px 3px 10px #97ffef;
     border-radius: 5px;
@@ -313,7 +325,7 @@ height: auto;
 }
 .boxes > .pages,
 .boxes > .apps{
-    cursor: pointer;
+
 
     height: 250px;
     width: 30%;
@@ -326,8 +338,9 @@ height: auto;
 
 align-items: center;
   align-content: center;
-
 }
+
+
 .boxes > .pages > a> img,
 .boxes > .apps > a> img{
     height: 100%;
@@ -375,6 +388,7 @@ color: white;
     font-size: 100px;
 
 }
+
 /* ------------------------CONTACT---------------------------- */
 #contact{
     background-color: unset;

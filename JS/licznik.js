@@ -8,6 +8,6 @@ let month = new Date();
 let days = new Date();
 
 // licznik.innerHTML = year.getFullYear()-2023 + " lat, " ;
-licznik.innerHTML =  month.getMonth()-1 + " miesiąc i " + days.getDate() + " dzień";
+licznik.innerHTML =  month.getMonth()-1 + " miesięcy i " + days.getDate() + " dni";
 liczPages.innerHTML =  stron.length+1 + " stron i " +aplikacji.length + " aplikacji";
 

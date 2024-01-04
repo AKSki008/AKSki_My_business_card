@@ -258,8 +258,7 @@ height: auto;
 /* ------------------------NOTE_GITHUB---------------------------- */
 #github_img {
     background-color: unset;
-    display: flex;
-    justify-content: space-around;
+flex-direction: column;
 }
 #github_img > #note{
     display: flex;
@@ -269,11 +268,13 @@ height: auto;
     color: black;
     height: auto;
     font-size: 30px;
-    width: 30%;
+    width: 40%;
     padding: 30px;
     background-color: #97ffefda;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #97ffef;
+    transform: translateY(230px);
+    z-index: 1;
 }
 #github_img > #note > .licznik,
 #github_img > #note > .howmuch{
@@ -291,10 +292,11 @@ height: auto;
 
 
 #github_img > img{
-    box-shadow: 3px 3px 10px #97ffef;
-    border-radius: 5px;
-    height: 450px;
-    
+    /* box-shadow: 3px 3px 10px #97ffef;
+    border-radius: 5px; */
+    height: 500px;
+    transform: translateX(10px)translateY(-130px);
+    z-index: 0;
 }
 /* ------------------------PROJECTS---------------------------- */
 #projects{

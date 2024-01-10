@@ -12,7 +12,13 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
+/* ------------------------Responsive----------------------------- */
+/* @media (min-width: 1550px){}
+@media (max-width: 1250px){}
+@media (max-width: 1000px){}
+@media (max-width: 800px){}
+@media (max-width: 600px){}
+@media (max-width: 480px){} */
 /* --------------------NAV-------------------- */
 
 nav{
@@ -87,6 +93,7 @@ main{
     transform: translateY(150px);
 
 }
+
 /* ------------------------BACKGROUND_VIDEO---------------------------- */
 #bg{
 margin: 0;
@@ -183,7 +190,7 @@ height: auto;
 #skills > .skills{
 
     height: 400px;
-    width: 30%;
+    width: 33%;
     align-items: center;
 }
 /* =============CARD_ROTATE================ */
@@ -295,6 +302,7 @@ flex-direction: column;
     /* box-shadow: 3px 3px 10px #97ffef;
     border-radius: 5px; */
     height: 500px;
+    width: 100%;
     transform: translateX(10px)translateY(-130px);
     z-index: 0;
 }
@@ -307,7 +315,7 @@ flex-direction: column;
 #projects > .projects{
 
     height:auto;
-    width: 46%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: center;

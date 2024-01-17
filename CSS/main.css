@@ -586,7 +586,63 @@ color: white;
     font-size: 100px;
 
 }
+/* ------------------------Responsive----------------------------- */
+@media (max-width: 1550px){
 
+    #projects > .projects{
+        width: 49%;
+    }
+
+    .boxes > .pages,
+    .boxes > .apps{
+        height: 200px;
+        width: 30%;
+        margin: 15px ;
+    }
+    
+    
+    .boxes > .pages > a> img,
+    .boxes > .apps > a> img{
+        height: 80%;
+        width: 100%;
+
+    }
+   
+    .boxes > .pages >  h4 ,
+    .boxes > .apps >  h4 {
+    font-size: 18px;
+    }
+    
+    .about,
+    .skills,
+    .projects,
+    .contact{
+       
+        margin: 50px 5px;
+        color: #00b5e2;
+        display: flex;
+        justify-content:center;
+    
+        border-radius: 5px;
+        padding: 20px;
+        font-family: 'Corinthia', cursive;
+        font-size: 100px;
+    
+    }
+}
+@media (max-width: 1250px){}
+@media (max-width: 1000px){
+    .about,
+    .skills,
+    .projects,
+    .contact{
+        margin: 50px 5px;
+        font-size: 100px;
+    }
+}
+@media (max-width: 800px){}
+@media (max-width: 600px){}
+@media (max-width: 480px){}
 /* ------------------------CONTACT---------------------------- */
 #contact{
     background-color: unset;
@@ -656,7 +712,17 @@ transform: translateX(-20px);
   }
 
 
- 
+ /* ------------------------Responsive----------------------------- */
+@media (max-width: 1550px){
+
+}
+@media (max-width: 1250px){}
+@media (max-width: 1000px){
+
+}
+@media (max-width: 800px){}
+@media (max-width: 600px){}
+@media (max-width: 480px){}
 
 /* ------------------------FOOTER---------------------------- */
 #footer{
@@ -686,7 +752,15 @@ font-size: 14px;
   font-size:25px;
   color:black;
 }
+/* ------------------------Responsive----------------------------- */
+@media (max-width: 1550px){}
+@media (max-width: 1250px){}
+@media (max-width: 1000px){
 
+}
+@media (max-width: 800px){}
+@media (max-width: 600px){}
+@media (max-width: 480px){}
 /* -----------------FORM------------------------ */
 
 * {
@@ -907,3 +981,13 @@ font-size: 14px;
       width: 90%;
     }
 }
+
+/* ------------------------Responsive----------------------------- */
+@media (max-width: 1550px){}
+@media (max-width: 1250px){}
+@media (max-width: 1000px){
+
+}
+@media (max-width: 800px){}
+@media (max-width: 600px){}
+@media (max-width: 480px){}

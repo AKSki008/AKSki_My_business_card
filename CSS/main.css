@@ -131,6 +131,7 @@ top: 0px;
 source{
     z-index: 0;
 }
+
 /* ------------------------LOGO---------------------------- */
 #logo{
     transform: translateX(0px) translateY(-50px);
@@ -208,7 +209,7 @@ justify-content: space-around;
 @media (max-width: 1250px){}
 @media (max-width: 1050px){
     #logo{
-        transform: translateX(-80px) translateY(-150px);   
+        transform: translateX(-80px) translateY(-120px);   
     }
     #logo > h1{
         font-size: 100px; 

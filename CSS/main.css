@@ -732,7 +732,7 @@ color: white;
 
     .boxes > .pages,
     .boxes > .apps{
-        height: 150px;
+        height: 200px;
         width: 40%;
         margin: 15px ;
     }

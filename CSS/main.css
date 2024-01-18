@@ -177,7 +177,7 @@ justify-content: space-around;
 /* ------------------------Responsive----------------------------- */
 @media (max-width: 1550px){
     #logo{
-        transform: translateX(-150px) translateY(-100px);   
+        transform: translateX(-150px) translateY(-80px);   
     }
     #logo > h1{
         font-size: 100px; 
@@ -185,29 +185,30 @@ justify-content: space-around;
     #logo > h2{
     
         font-size: 20px; 
-        transform: translateX(-200px) translateY(50px);
+        transform: translateX(-200px) translateY(35px);
     }
     #png{
         margin-top: 50px;
         }
 
     #png> img{
-        height: 150px;
-        width: 200px;
+        height: 200px;
+        width: 250px;
     }
      #p{
-        transform: translateY(-230px);
+        transform: translateY(-200px);
     }
     #pr{
-        transform: translateY(-255px);
+        transform: translateY(-230px);
     }
     #r{
-        transform: translateY(-270px);
+        transform: translateY(-250px);
     }
 }
-@media (max-width: 1250px){
+@media (max-width: 1250px){}
+@media (max-width: 1050px){
     #logo{
-        transform: translateX(-100px) translateY(-100px);   
+        transform: translateX(-80px) translateY(-150px);   
     }
     #logo > h1{
         font-size: 100px; 
@@ -215,11 +216,29 @@ justify-content: space-around;
     #logo > h2{
     
         font-size: 20px; 
-        transform: translateX(-200px) translateY(50px);
+        transform: translateX(-150px) translateY(35px);
+    }
+    #png{
+        margin-top: 0px;
+        }
+
+    #png> img{
+        height: 100px;
+        width: 150px;
+    }
+     #p{
+        transform: translateY(-250px);
+    }
+    #pr{
+        transform: translateY(-280px);
+    }
+    #r{
+        transform: translateY(-300px);
     }
 }
-@media (max-width: 1000px){}
-@media (max-width: 800px){}
+@media (max-width: 800px){
+
+}
 @media (max-width: 600px){}
 @media (max-width: 480px){} 
 
@@ -798,14 +817,15 @@ font-size: 14px;
 
 * {
     box-sizing: border-box;
+
   }
 
 
 
 .form {
     margin:3rem auto;
-    max-width:37rem;
-
+    max-width:80%;
+    
 }
 .form .form-row {
     margin-bottom:0.5rem;
@@ -834,8 +854,10 @@ font-size: 14px;
     padding:0.8rem;
     border:1px solid #00b5e2;
     display: block;
-    width:100%;
+    width:90%;
     color:black;
+
+    
 }
 .form input[type=text]:focus,
 .form input[type=email]:focus,
@@ -1008,10 +1030,10 @@ font-size: 14px;
     }
 }
 
-@media (max-width: 1020px){
+@media (max-width: 1050px){
   .container {
       margin: auto;
-      width: 90%;
+      width: 100%;
     }
 }
 
@@ -1027,17 +1049,47 @@ font-size: 14px;
     .form textarea{
         font-size: 15px;
     }
- 
+
+}
+@media (max-width: 1250px){}
+@media (max-width: 1050px){
+
+    .form {
+        margin:3rem auto;
+        max-width:80%;
+        
+    }
+    .form .form-row {
+        margin-bottom:0.5rem;
+        font-size: 18px;
+    
+    }
+    .form .form-row:last-child {
+        margin-bottom: 0;
+    }
+    .form input[type=text],
+    .form input[type=email],
+    .form textarea{
+        box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
+        background-color: #97ffef;
+        font-size: 15px;
+    }
+    .form .checkbox-cnt .state {
+        box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
+    
+    }
     .form input[type=text], 
     .form input[type=email],
     .form textarea {
         border-radius:0.2rem;
         box-shadow: 0 0 10px #00b5e2;
-        padding:10px;
+        padding:0.8rem;
         border:1px solid #00b5e2;
         display: block;
-        width:100%;
+        width:90%;
         color:black;
+    
+        
     }
     .form input[type=text]:focus,
     .form input[type=email]:focus,
@@ -1057,22 +1109,6 @@ font-size: 14px;
     
         margin-bottom:0.5rem;
     }
-    .form .submit-btn {
-    
-        padding:1rem 2rem;
-        background: #00b5e2;
-        border:0;
-        border-radius:0.2rem;
-        color:black;
-        font-size: 18px;
-        font-weight: bold;
-        transition: 0.3s background-color;
-        cursor: pointer;
-    }
-}
-@media (max-width: 1250px){}
-@media (max-width: 1000px){
-
 }
 @media (max-width: 800px){}
 @media (max-width: 600px){}

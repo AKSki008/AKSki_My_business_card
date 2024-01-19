@@ -84,7 +84,56 @@ nav{
     }
     @media (max-width: 1000px){}
     @media (max-width: 800px){
+        nav{
+            background-color:unset;
+
+            margin: 0;
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            z-index: 2;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+        }
         
+        .row{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 60px;
+            top: 15px;
+            justify-content:unset;
+
+            list-style: none;
+
+            
+        }
+        .row > .col{
+            align-items: center;
+            border-left: solid 1px black;
+            background-color: #97ffefda;
+            border: solid 2px #97ffef;
+            border-radius: 5px;
+            width: 100px;
+        }
+        .row > .col:hover{
+            background-color: black;
+        }
+        .row > .col > a{
+            display: block;
+            color: black;
+      
+            font-weight: 900;
+            height: 40px;
+            letter-spacing: 2px;
+            padding-top: 8px;
+            padding-left: 10px;
+            width: 90px;
+            text-decoration: none;
+            
+        }
+        .row > .col > a:hover{
+            color: #97ffef;
+        }
     }
     @media (max-width: 600px){}
     @media (max-width: 480px){} 
@@ -97,14 +146,14 @@ nav{
     height: 40px;
 
     margin: 30px 30px;
-    transform: translateY(-40px) translateX(-10px) !important;
+    transform: translateY(-39px) translateX(-10px) !important;
 
     font-size: 22px;
 
-    background-color: rgb(120, 255, 194);
+    background-color: #97ffef;
     color: black;
 
-    border: solid 2px rgb(120, 255, 194);
+    border: solid 2px #97ffef;
     border-radius: 5px;
     transition: 0.7s;
   }
@@ -118,7 +167,7 @@ nav{
     box-shadow: 0px 0px 5px -1px rgba(131, 159, 238, 1);
   }
   #btn-up {
-    transform: translateY(-40px) translateX(-10px) !important;
+    transform: translateY(-74px) translateX(65px) !important;
   }
 /* ------------------------Responsive----------------------------- */
 

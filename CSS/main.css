@@ -89,7 +89,59 @@ nav{
     @media (max-width: 600px){}
     @media (max-width: 480px){} 
     
-    
+
+/* ------------------- Button nav ------------------- */
+
+.btn {
+    width: 40px;
+    height: 40px;
+
+    margin: 30px 30px;
+    transform: translateY(-40px) translateX(-10px) !important;
+
+    font-size: 22px;
+
+    background-color: rgb(120, 255, 194);
+    color: black;
+
+    border: solid 2px rgb(120, 255, 194);
+    border-radius: 5px;
+    transition: 0.7s;
+  }
+  .btn:hover {
+    color: black;
+    background-color: rgba(3, 193, 252, 1);
+    border: solid 2px rgba(3, 193, 252, 1);
+
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(131, 159, 238, 1);
+    -moz-box-shadow: 0px 0px 5 -1px rgba(131, 159, 238, 1);
+    box-shadow: 0px 0px 5px -1px rgba(131, 159, 238, 1);
+  }
+  #btn-up {
+    transform: translateY(-40px) translateX(-10px) !important;
+  }
+/* ------------------------Responsive----------------------------- */
+
+  @media (max-width: 800px) {
+    .btn {
+      display: inline !important;
+      position: absolute;
+      right: -10px;
+      top: 43px;
+    }
+    .none {
+      display: none !important ;
+    }
+    .show {
+      display: block !important ;
+    }
+  }
+  @media (min-width: 800px) {
+    .btn {
+      display: none !important;
+    }
+
+  } 
 
 /* --------------------MAIN-------------------- */
 main{
